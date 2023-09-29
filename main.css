@@ -1,0 +1,59 @@
+* {
+  /* * se aplica a todos os elementos da pagina*/
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+body {
+  background: var(--bg);
+}
+.light-theme {
+  --bg: var(--white); /*var é para as variaveis definidas*/
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--white);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+:root {
+  /*:root representa o <html>*/
+  --white: #ffffff;
+  --black: #000000;
+}
+.btn {
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+.btn {
+  position: absolute;
+  top: 25px;
+  left: 359px;
+  height: 30px;
+  width: 60px;
+  border-radius: 30px;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+.bnt:focus {
+  outline-style: none;
+}
+
+img {
+  width: 20%;
+  height: auto; /* Mantém a proporção original da imagem */
+}
+.image-container {
+  text-align: center;
+}
+figure {
+  display: block;
+  margin: 6px;
+}
+
+figcaption {
+  font-size: 14px;
+  margin-top: 5px;
+}
